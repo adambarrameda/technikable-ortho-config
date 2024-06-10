@@ -122,7 +122,7 @@
 
         pct {
             bindings = <&kp LS(N5)>;
-            key-positions = <20 19>;
+            key-positions = <21 33>;
         };
 
         crt {
@@ -167,7 +167,7 @@
 
         dlrs {
             bindings = <&kp LS(NUMBER_4)>;
-            key-positions = <21 33>;
+            key-positions = <20 19>;
         };
     };
 
@@ -236,20 +236,20 @@
         base_layer {
             label = "Base";
             bindings = <
-&kp Q       &kp W       &kp E        &kp R         &kp T           &kp C_VOL_DN                                &kp C_VOL_UP  &kp Y      &kp U  &kp I        &kp O       &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D  &kp F         &kp G           &kp C_PLAY_PAUSE                            &kp C_MUTE    &kp H      &kp J  &ht RCTRL K  &ht RALT L  &ht RGUI SQT
-&kp Z       &kp X       &kp C        &kp V         &kp B           &kp C_BRI_DN                                &kp C_BRI_UP  &kp N      &kp M  &cmq         &pdex       &kp MINUS
-                        &none        &lt 3 ESCAPE  &sk LEFT_SHIFT  &kp LS(LA(LC(LGUI)))  &kp LS(LA(LC(LGUI)))  &lt 1 SPACE   &lt 2 TAB  &none
+&kp Q        &kp W       &kp E                 &kp R         &kp T           &none         &none        &kp Y      &kp U  &kp I  &kp O       &kp P
+&ht LGUI A   &ht LALT S  &kp D                 &kp F         &kp G           &none         &none        &kp H      &kp J  &kp K  &ht RALT L  &ht RGUI SQT
+&ht LCTRL Z  &kp X       &kp C                 &kp V         &kp B           &none         &none        &kp N      &kp M  &cmq   &pdex       &ht RCTRL MINUS
+                         &kp LS(LA(LC(LGUI)))  &lt 3 ESCAPE  &sk LEFT_SHIFT  &none  &none  &lt 1 SPACE  &lt 2 TAB  &none
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR  &trans        &trans        &trans        &trans        &trans                &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-&trans      &trans        &trans        &trans        &trans        &trans                &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans    &trans     &trans     &trans     &trans
-                          &trans        &trans        &trans        &trans        &trans  &trans  &trans    &trans
+&bt BT_CLR  &trans        &trans        &trans        &trans        &trans                &trans  &kp HOME    &kp PG_DN     &kp PG_UP     &kp END           &trans
+&trans      &trans        &trans        &trans        &trans        &trans                &trans  &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT         &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE  &trans
+                          &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans
             >;
         };
 
